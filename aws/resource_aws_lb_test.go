@@ -218,6 +218,7 @@ func TestAccAWSLBBackwardsCompatibility(t *testing.T) {
 					resource.TestCheckResourceAttrSet("aws_alb.lb_test", "zone_id"),
 					resource.TestCheckResourceAttrSet("aws_alb.lb_test", "dns_name"),
 					resource.TestCheckResourceAttrSet("aws_alb.lb_test", "arn"),
+					//					resource.TestCheckResourceAttr("aws_lb.lb_test", "private_ips.#", "1"),
 				),
 			},
 		},
